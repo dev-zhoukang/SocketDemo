@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58DD42B61FC191F100114555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42B51FC191F100114555 /* AppDelegate.swift */; };
+		58DD42B81FC191F100114555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42B71FC191F100114555 /* ViewController.swift */; };
+		58DD42BA1FC191F100114555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DD42B91FC191F100114555 /* Assets.xcassets */; };
+		58DD42BD1FC191F100114555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DD42BB1FC191F100114555 /* Main.storyboard */; };
+		58DD42C91FC191F100114555 /* SocketServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42C81FC191F100114555 /* SocketServerTests.swift */; };
+		58DD42D41FC191F100114555 /* SocketServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42D31FC191F100114555 /* SocketServerUITests.swift */; };
+		58DD42E21FC1939500114555 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42E11FC1939500114555 /* ServerManager.swift */; };
+		58DD42EE1FC1959400114555 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42E91FC1959400114555 /* yudpsocket.swift */; };
+		58DD42EF1FC1959400114555 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42EA1FC1959400114555 /* ysocket.swift */; };
+		58DD42F01FC1959400114555 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42EB1FC1959400114555 /* yudpsocket.c */; };
+		58DD42F11FC1959400114555 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42EC1FC1959400114555 /* ytcpsocket.c */; };
+		58DD42F21FC1959400114555 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD42ED1FC1959400114555 /* ytcpsocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58DD42C51FC191F100114555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58DD42AA1FC191F100114555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58DD42B11FC191F100114555;
+			remoteInfo = SocketServer;
+		};
+		58DD42D01FC191F100114555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58DD42AA1FC191F100114555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58DD42B11FC191F100114555;
+			remoteInfo = SocketServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58DD42B21FC191F100114555 /* SocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DD42B51FC191F100114555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58DD42B71FC191F100114555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58DD42B91FC191F100114555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58DD42BC1FC191F100114555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58DD42BE1FC191F100114555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DD42BF1FC191F100114555 /* SocketServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocketServer.entitlements; sourceTree = "<group>"; };
+		58DD42C41FC191F100114555 /* SocketServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DD42C81FC191F100114555 /* SocketServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerTests.swift; sourceTree = "<group>"; };
+		58DD42CA1FC191F100114555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DD42CF1FC191F100114555 /* SocketServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DD42D31FC191F100114555 /* SocketServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServerUITests.swift; sourceTree = "<group>"; };
+		58DD42D51FC191F100114555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DD42E11FC1939500114555 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		58DD42E81FC1959400114555 /* SocketServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocketServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		58DD42E91FC1959400114555 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		58DD42EA1FC1959400114555 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		58DD42EB1FC1959400114555 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		58DD42EC1FC1959400114555 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		58DD42ED1FC1959400114555 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58DD42AF1FC191F100114555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42C11FC191F100114555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42CC1FC191F100114555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58DD42A91FC191F100114555 = {
+			isa = PBXGroup;
+			children = (
+				58DD42B41FC191F100114555 /* SocketServer */,
+				58DD42C71FC191F100114555 /* SocketServerTests */,
+				58DD42D21FC191F100114555 /* SocketServerUITests */,
+				58DD42B31FC191F100114555 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58DD42B31FC191F100114555 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42B21FC191F100114555 /* SocketServer.app */,
+				58DD42C41FC191F100114555 /* SocketServerTests.xctest */,
+				58DD42CF1FC191F100114555 /* SocketServerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58DD42B41FC191F100114555 /* SocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42B51FC191F100114555 /* AppDelegate.swift */,
+				58DD42B71FC191F100114555 /* ViewController.swift */,
+				58DD42E11FC1939500114555 /* ServerManager.swift */,
+				58DD42BF1FC191F100114555 /* SocketServer.entitlements */,
+				58DD42E61FC1956A00114555 /* Vendors */,
+				58DD42E51FC1950700114555 /* Supporting */,
+			);
+			path = SocketServer;
+			sourceTree = "<group>";
+		};
+		58DD42C71FC191F100114555 /* SocketServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42C81FC191F100114555 /* SocketServerTests.swift */,
+				58DD42CA1FC191F100114555 /* Info.plist */,
+			);
+			path = SocketServerTests;
+			sourceTree = "<group>";
+		};
+		58DD42D21FC191F100114555 /* SocketServerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42D31FC191F100114555 /* SocketServerUITests.swift */,
+				58DD42D51FC191F100114555 /* Info.plist */,
+			);
+			path = SocketServerUITests;
+			sourceTree = "<group>";
+		};
+		58DD42E51FC1950700114555 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42B91FC191F100114555 /* Assets.xcassets */,
+				58DD42BB1FC191F100114555 /* Main.storyboard */,
+				58DD42BE1FC191F100114555 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		58DD42E61FC1956A00114555 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42E71FC1957700114555 /* ysocket */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		58DD42E71FC1957700114555 /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				58DD42EA1FC1959400114555 /* ysocket.swift */,
+				58DD42EC1FC1959400114555 /* ytcpsocket.c */,
+				58DD42ED1FC1959400114555 /* ytcpsocket.swift */,
+				58DD42EB1FC1959400114555 /* yudpsocket.c */,
+				58DD42E91FC1959400114555 /* yudpsocket.swift */,
+				58DD42E81FC1959400114555 /* SocketServer-Bridging-Header.h */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58DD42B11FC191F100114555 /* SocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DD42D81FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServer" */;
+			buildPhases = (
+				58DD42AE1FC191F100114555 /* Sources */,
+				58DD42AF1FC191F100114555 /* Frameworks */,
+				58DD42B01FC191F100114555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketServer;
+			productName = SocketServer;
+			productReference = 58DD42B21FC191F100114555 /* SocketServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58DD42C31FC191F100114555 /* SocketServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DD42DB1FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServerTests" */;
+			buildPhases = (
+				58DD42C01FC191F100114555 /* Sources */,
+				58DD42C11FC191F100114555 /* Frameworks */,
+				58DD42C21FC191F100114555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58DD42C61FC191F100114555 /* PBXTargetDependency */,
+			);
+			name = SocketServerTests;
+			productName = SocketServerTests;
+			productReference = 58DD42C41FC191F100114555 /* SocketServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58DD42CE1FC191F100114555 /* SocketServerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DD42DE1FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServerUITests" */;
+			buildPhases = (
+				58DD42CB1FC191F100114555 /* Sources */,
+				58DD42CC1FC191F100114555 /* Frameworks */,
+				58DD42CD1FC191F100114555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58DD42D11FC191F100114555 /* PBXTargetDependency */,
+			);
+			name = SocketServerUITests;
+			productName = SocketServerUITests;
+			productReference = 58DD42CF1FC191F100114555 /* SocketServerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58DD42AA1FC191F100114555 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Zhou Kang";
+				TargetAttributes = {
+					58DD42B11FC191F100114555 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					58DD42C31FC191F100114555 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58DD42B11FC191F100114555;
+					};
+					58DD42CE1FC191F100114555 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58DD42B11FC191F100114555;
+					};
+				};
+			};
+			buildConfigurationList = 58DD42AD1FC191F100114555 /* Build configuration list for PBXProject "SocketServer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58DD42A91FC191F100114555;
+			productRefGroup = 58DD42B31FC191F100114555 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58DD42B11FC191F100114555 /* SocketServer */,
+				58DD42C31FC191F100114555 /* SocketServerTests */,
+				58DD42CE1FC191F100114555 /* SocketServerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58DD42B01FC191F100114555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DD42BA1FC191F100114555 /* Assets.xcassets in Resources */,
+				58DD42BD1FC191F100114555 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42C21FC191F100114555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42CD1FC191F100114555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58DD42AE1FC191F100114555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DD42B81FC191F100114555 /* ViewController.swift in Sources */,
+				58DD42E21FC1939500114555 /* ServerManager.swift in Sources */,
+				58DD42F01FC1959400114555 /* yudpsocket.c in Sources */,
+				58DD42EE1FC1959400114555 /* yudpsocket.swift in Sources */,
+				58DD42F21FC1959400114555 /* ytcpsocket.swift in Sources */,
+				58DD42EF1FC1959400114555 /* ysocket.swift in Sources */,
+				58DD42B61FC191F100114555 /* AppDelegate.swift in Sources */,
+				58DD42F11FC1959400114555 /* ytcpsocket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42C01FC191F100114555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DD42C91FC191F100114555 /* SocketServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DD42CB1FC191F100114555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DD42D41FC191F100114555 /* SocketServerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58DD42C61FC191F100114555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58DD42B11FC191F100114555 /* SocketServer */;
+			targetProxy = 58DD42C51FC191F100114555 /* PBXContainerItemProxy */;
+		};
+		58DD42D11FC191F100114555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58DD42B11FC191F100114555 /* SocketServer */;
+			targetProxy = 58DD42D01FC191F100114555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58DD42BB1FC191F100114555 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58DD42BC1FC191F100114555 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58DD42D61FC191F100114555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58DD42D71FC191F100114555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		58DD42D91FC191F100114555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SocketServer/SocketServer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = "$(SRCROOT)/SocketServer/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocketServer/Vendors/ysocket/SocketServer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		58DD42DA1FC191F100114555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SocketServer/SocketServer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = "$(SRCROOT)/SocketServer/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocketServer/Vendors/ysocket/SocketServer-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		58DD42DC1FC191F100114555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = SocketServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketServer.app/Contents/MacOS/SocketServer";
+			};
+			name = Debug;
+		};
+		58DD42DD1FC191F100114555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = SocketServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketServer.app/Contents/MacOS/SocketServer";
+			};
+			name = Release;
+		};
+		58DD42DF1FC191F100114555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = SocketServerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = SocketServer;
+			};
+			name = Debug;
+		};
+		58DD42E01FC191F100114555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TE2958KSXV;
+				INFOPLIST_FILE = SocketServerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = SocketServer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58DD42AD1FC191F100114555 /* Build configuration list for PBXProject "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DD42D61FC191F100114555 /* Debug */,
+				58DD42D71FC191F100114555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DD42D81FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DD42D91FC191F100114555 /* Debug */,
+				58DD42DA1FC191F100114555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DD42DB1FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DD42DC1FC191F100114555 /* Debug */,
+				58DD42DD1FC191F100114555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DD42DE1FC191F100114555 /* Build configuration list for PBXNativeTarget "SocketServerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DD42DF1FC191F100114555 /* Debug */,
+				58DD42E01FC191F100114555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58DD42AA1FC191F100114555 /* Project object */;
+}
