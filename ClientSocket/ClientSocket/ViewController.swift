@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    fileprivate lazy var socket : SocketMgr = SocketMgr(addr: "192.168.2.101", port: 8888)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if socket.connectSocketServer() {
+            print("连接服务器成功")
+        }
+        else {
+            print("连接服务器失败")
+        }
     }
 
     override func didReceiveMemoryWarning() {

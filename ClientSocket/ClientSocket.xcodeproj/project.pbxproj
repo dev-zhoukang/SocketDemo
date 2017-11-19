@@ -19,6 +19,7 @@
 		58DD437E1FC19B2500114555 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DD43791FC19B2400114555 /* yudpsocket.c */; };
 		58DD437F1FC19B2500114555 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DD437A1FC19B2500114555 /* ytcpsocket.c */; };
 		58DD43801FC19B2500114555 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD437B1FC19B2500114555 /* ytcpsocket.swift */; };
+		58DD43821FC19BA800114555 /* SocketMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD43811FC19BA800114555 /* SocketMgr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		58DD43791FC19B2400114555 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
 		58DD437A1FC19B2500114555 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
 		58DD437B1FC19B2500114555 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		58DD43811FC19BA800114555 /* SocketMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMgr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				58DD43751FC19B1400114555 /* ysocket */,
 				58DD43471FC19B0A00114555 /* AppDelegate.swift */,
 				58DD43491FC19B0A00114555 /* ViewController.swift */,
+				58DD43811FC19BA800114555 /* SocketMgr.swift */,
 				58DD434B1FC19B0A00114555 /* Main.storyboard */,
 				58DD434E1FC19B0A00114555 /* Assets.xcassets */,
 				58DD43501FC19B0A00114555 /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58DD437C1FC19B2500114555 /* yudpsocket.swift in Sources */,
+				58DD43821FC19BA800114555 /* SocketMgr.swift in Sources */,
 				58DD437E1FC19B2500114555 /* yudpsocket.c in Sources */,
 				58DD434A1FC19B0A00114555 /* ViewController.swift in Sources */,
 				58DD437D1FC19B2500114555 /* ysocket.swift in Sources */,
