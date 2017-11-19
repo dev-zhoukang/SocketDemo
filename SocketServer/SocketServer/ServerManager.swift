@@ -9,12 +9,18 @@
 import Cocoa
 
 class ServerManager: NSObject {
-    
+    fileprivate lazy var serverSocket : TCPServer = TCPServer(addr: "0.0.0.0", port: 8888)
 }
 
 extension ServerManager {
     func startServer() {
-        // 1、创建
+        serverSocket.listen()
+        
+        DispatchQueue.global().async {
+            if let client = self.serverSocket.accept() {
+                print("接收到一个客户端")
+            }
+        }
     }
     func stopServer() {
         
